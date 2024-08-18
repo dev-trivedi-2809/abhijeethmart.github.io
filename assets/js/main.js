@@ -65,7 +65,7 @@
   const output = countdown.innerHTML;
 
   const countDownDate = function() {
-    let timeleft = new Date("Sep 7, 2024 00:00:00").getTime(); Date(countdown.getAttribute('data-count')).getTime() - new Date().getTime();
+    let timeleft = new Date("Sep 7, 2024 00:00:00") .getTime(); Date(countdown.getAttribute('data-count')).getTime() - new Date().getTime();
 
     let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
     let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
