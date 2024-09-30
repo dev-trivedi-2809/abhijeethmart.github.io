@@ -61,22 +61,38 @@
   /**
    * Countdown timer
    */
-  const countDownDate = function() {
-    let timeleft = new Date("Oct 12, 2024 11:45:00").getTime() - new Date().getTime();
+  document.addEventListener('DOMContentLoaded', function() {
+    let countdown = document.querySelector('.countdown');
+    const output = countdown.innerHTML;
 
-    let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-    let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+    const countDownDate = function() {
+        let timeleft = new Date("Oct 12, 2024 11:45:00").getTime() - new Date().getTime();
+        
+        if (timeleft < 0) {
+            countdown.innerHTML = "Countdown Finished";
+            clearInterval(timer);
+            return; // Exit if the countdown is finished
+        }
 
-    countdown.innerHTML = output.replace('%d', days)
-                                .replace('%h', hours)
-                                .replace('%m', minutes)
-                                .replace('%s', seconds);
-};
+        let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
 
-countDownDate(); 
-setInterval(countDownDate, 1000); // Update every second
+        // Log the values to debug
+        console.log(`Days: ${days}, Hours: ${hours}, Minutes: ${minutes}, Seconds: ${seconds}`);
+
+        // Update the countdown display
+        countdown.innerHTML = output.replace('%d', days)
+                                    .replace('%h', hours)
+                                    .replace('%m', minutes)
+                                    .replace('%s', seconds);
+    };
+
+    countDownDate(); 
+    const timer = setInterval(countDownDate, 1000); // Update every second
+});
+
 
 
   document.addEventListener('DOMContentLoaded', function() {
