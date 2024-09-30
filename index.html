@@ -1,369 +1,205 @@
-<style>:root{--background:210 100% 97%;--foreground:339 20% 20%;--primary:308 56% 85%;--primary-foreground:210 22% 22%;--secondary:196 75% 88%;--secondary-foreground:210 22% 22%;--accent:211 86% 70%;--accent-foreground:210 22% 22%;--destructive:0 93% 73%;--destructive-foreground:210 22% 22%;--muted:210 100% 95%;--muted-foreground:210 22% 22%;--card:210 100% 97%;--card-foreground:210 22% 22%;--popover:0 0% 100%;--popover-foreground:341 20% 22%;--border:210 40% 80%;--input:210 40% 56%;--ring:210 40% 60%;--chart-1:308 56% 85%;--chart-2:211 96% 70%;--chart-3:45 100% 80%;--chart-4:180 60% 85%;--chart-5:120 50% 80%;--radius:1rem;}img[src="/placeholder.svg"],img[src="/placeholder-user.jpg"]{filter:sepia(.3) hue-rotate(150deg) saturate(.5) opacity(0.8) }</style>
-<style>h1, h2, h3, h4, h5, h6 { font-family: 'Manrope', sans-serif; --font-sans-serif: 'Manrope'; }
-</style>
-<style>body { font-family: 'Manrope', sans-serif; --font-sans-serif: 'Manrope'; }
-</style>
-<div class="flex min-h-[100dvh] flex-col bg-background">
-  <header class="px-4 lg:px-6 h-14 flex items-center">
-    <a class="flex items-center justify-center" href="#">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="h-6 w-6"
-      >
-        <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
-      </svg>
-      <span class="sr-only">Abhijeeth Mart</span>
-    </a>
-    <nav class="ml-auto flex gap-4 sm:gap-6">
-      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
-        Shop
-      </a>
-      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
-        About
-      </a>
-      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
-        Contact
-      </a>
-    </nav>
-  </header>
-  <main class="flex-1 flex flex-col items-center justify-center px-4 md:px-6 py-12 md:py-24 lg:py-32">
-    <div class="max-w-md text-center space-y-4">
-      <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Coming Soon</div>
-      <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Abhijeeth Mart</h1>
-      <p class="text-muted-foreground md:text-xl">
-        Get ready for the launch of our new e-commerce store, Abhijeeth Mart. We're working hard to bring you the
-        best shopping experience.
-      </p>
-      <form class="flex gap-2 w-full max-w-sm">
-        <input
-          class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 flex-1"
-          placeholder="Enter your email"
-          type="email"
-        />
-        <button
-          class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
-          type="submit"
-        >
-          Notify Me
-        </button>
-      </form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Abhijeeth Mart - Online Shopping for Electronics, Fashion & More - ABHIJEETH MART</title>
+  <meta content="Shop online at Abhijeeth Mart for a wide range of products including electronics, fashion, home essentials, and more. Fast delivery and top quality products." name="description">
+  <meta content="Abhijeeth Mart, online shopping, electronics, fashion, home essentials, fast delivery, quality products" name="keywords">
+
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex flex-column align-items-center">
+
+      <h1>Coming Soon</h1>
+      <h2>We're working hard to improve our website and we'll ready to launch after</h2>
+      <div class="countdown d-flex justify-content-center" data-count="2024/10/12">
+        <div>
+          <h3>%d</h3>
+          <h4>Days</h4>
+        </div>
+        <div>
+          <h3>%h</h3>
+          <h4>Hours</h4>
+        </div>
+        <div>
+          <h3>%m</h3>
+          <h4>Minutes</h4>
+        </div>
+        <div>
+          <h3>%s</h3>
+          <h4>Seconds</h4>
+        </div>
+      </div>
+
+      <div class="subscribe">
+        <h4>Subscribe now to get the latest updates!</h4>
+        <form action="https://formspree.io/f/xgvwebdk" method="post" role="form" class="php-email-form">
+          <div class="subscribe-form">
+            <input type="email" name="email"><input type="submit" value="Subscribe">
+          </div>
+          <div class="mt-2">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your notification request was sent. Thank you!</div>
+          </div>
+        </form>
+      </div>
+
+      <div class="social-links text-center">
+        <a href="https://www.facebook.com/people/Abhijeeth-Mart/61556807623415/" class="facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://wa.link/s009ge" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+      </div>
+
     </div>
-    <section class="mt-12 w-full max-w-4xl">
-      <h2 class="text-2xl font-bold mb-4">Customer Reviews</h2>
-      <div class="grid grid-cols-1 gap-6">
-        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
-          <div class="flex flex-col space-y-1.5 p-6">
-            <div class="flex items-center gap-4">
-              <span class="relative flex shrink-0 overflow-hidden rounded-full w-10 h-10 border">
-                <img class="aspect-square h-full w-full" alt="@shadcn" src="/placeholder-user.jpg" />
-              </span>
-              <div class="grid gap-1">
-                <h3 class="font-semibold">Sarah Johnson</h3>
-                <div class="flex items-center gap-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="w-5 h-5 fill-primary"
-                  >
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="w-5 h-5 fill-primary"
-                  >
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="w-5 h-5 fill-primary"
-                  >
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="w-5 h-5 fill-muted stroke-muted-foreground"
-                  >
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="w-5 h-5 fill-muted stroke-muted-foreground"
-                  >
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                  </svg>
-                </div>
-              </div>
-            </div>
+  </header><!-- End #header -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <h2>Abhijeeth Mart</h2>
+            <h3>Online Shopping for Electronics, Fashion & More</h3>
           </div>
-          <div class="p-6">
-            <p class="text-muted-foreground">
-              I've been shopping at Abhijeeth Mart for a few months now and I'm really impressed with the quality of
-              their products and the customer service. The website is easy to navigate and the shipping is fast. I
-              would definitely recommend this store to my friends.
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Welcome to Abhijeeth Mart, your one-stop online destination for a vast array of high-quality products. Explore our diverse categories, from apparel and electronics to home essentials and more. Stay ahead of the curve with our carefully curated selection of trending items. Enjoy a seamless shopping experience on our user-friendly platform, with secure payment options and reliable delivery services. Customer satisfaction is our top priority, and we're dedicated to resolving any issues you may have. Embark on a shopping journey with Abhijeeth Mart and discover the perfect products to meet your needs.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i> Top Quality Products</li>
+              <li><i class="bi bi-check"></i> Affordable Prices</li>
+              <li><i class="bi bi-check"></i> Fast Delivery</li>
+            </ul>
+            <p class="fst-italic">
+              Will Be Launching Soon..
+              STAY TUNED
             </p>
           </div>
         </div>
-        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
-          <div class="flex flex-col space-y-1.5 p-6">
-            <div class="flex items-center gap-4">
-              <span class="relative flex shrink-0 overflow-hidden rounded-full w-10 h-10 border">
-                <img class="aspect-square h-full w-full" alt="@shadcn" src="/placeholder-user.jpg" />
-              </span>
-              <div class="grid gap-1">
-                <h3 class="font-semibold">Alex Smith</h3>
-                <div class="flex items-center gap-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="w-5 h-5 fill-primary"
-                  >
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="w-5 h-5 fill-primary"
-                  >
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="w-5 h-5 fill-primary"
-                  >
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="w-5 h-5 fill-muted stroke-muted-foreground"
-                  >
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="w-5 h-5 fill-muted stroke-muted-foreground"
-                  >
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="p-6">
-            <p class="text-muted-foreground">
-              I recently made a purchase from Abhijeeth Mart and I'm really happy with the product. The website was
-              easy to use and the shipping was fast. The customer service team was also very helpful when I had a
-              question. I would definitely shop here again.
-            </p>
-          </div>
-        </div>
-        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
-          <div class="flex flex-col space-y-1.5 p-6">
-            <div class="flex items-center gap-4">
-              <span class="relative flex shrink-0 overflow-hidden rounded-full w-10 h-10 border">
-                <img class="aspect-square h-full w-full" alt="@shadcn" src="/placeholder-user.jpg" />
-              </span>
-              <div class="grid gap-1">
-                <h3 class="font-semibold">Emily Parker</h3>
-                <div class="flex items-center gap-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="w-5 h-5 fill-primary"
-                  >
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="w-5 h-5 fill-primary"
-                  >
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="w-5 h-5 fill-muted stroke-muted-foreground"
-                  >
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="w-5 h-5 fill-muted stroke-muted-foreground"
-                  >
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="w-5 h-5 fill-muted stroke-muted-foreground"
-                  >
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="p-6">
-            <p class="text-muted-foreground">
-              I've been shopping at Abhijeeth Mart for a while now and I'm generally satisfied with the products and
-              service. The website is easy to use and the shipping is fast. However, I've had a few issues with the
-              quality of some of the products I've received. Overall, it's a decent store, but I think there's room
-              for improvement.
-            </p>
-          </div>
-        </div>
+
       </div>
-    </section>
-    <section class="mt-12 w-full max-w-4xl">
-      <h2 class="text-2xl font-bold mb-4">About Abhijeeth Mart</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
-          <p class="text-muted-foreground">
-            Abhijeeth Mart is a new e-commerce platform that aims to provide a seamless and convenient shopping
-            experience for our customers. We are dedicated to offering a wide range of high-quality products at
-            competitive pri
-          </p>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
         </div>
-        <div>
-          <p class="text-muted-foreground">
-            Our team is passionate about customer satisfaction and we strive to deliver exceptional service. We are
-            constantly working to improve our platform and expand our product offerings to better serve our
-            customers.
-          </p>
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10">
+
+            <div class="info-wrap">
+              <div class="row">
+                <div class="col-lg-4 info">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>62, MG Road<br>Hyderabad, TG 500003</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>abhijeethmart@gmail.com</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p><a href="tel:+918179653410" style="text-decoration: none;color: white;">+91 8179653410</a></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <form action="https://formspree.io/f/xgvwebdk" method="post" id="contactForm" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" role="form" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
       </div>
-    </section>
-  </main>
-  <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-    <p class="text-xs text-muted-foreground">© 2024 Abhijeeth Mart. All rights reserved.</p>
-    <nav class="sm:ml-auto flex gap-4 sm:gap-6">
-      <a class="text-xs hover:underline underline-offset-4" href="#">
-        Terms of Service
-      </a>
-      <a class="text-xs hover:underline underline-offset-4" href="#">
-        Privacy
-      </a>
-    </nav>
-  </footer>
-</div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Abhijeeth Mart</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/comingsoon-free-html-bootstrap-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End #footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
